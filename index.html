@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1.0" />
+<link rel= "stylesheet" href= "style.css"/>
+<title>facebook beta page</title>
+</head>
+<body>
+<form action= "">
+ <input type= "text" id="username" placeholder="email or phone number" /> <br />
+<input type="password" id="password" placeholder="password" />
+<br />
+<button type="" id="btn" >Log In</button> <br>
+<a href="" class="f-pws">Forgot password</a> <br>
+<button class="bnt2"> create new account</button>
+</form>
+<div class="f-container">
+<img src="facebook-logo-png-38355.png">
+<p> Connect with friends and the world around you on Facebook</p>
+</div>
+
+<div class="sub-link">
+<h3><a href="">Create a page</a> for a celebrity, brand or business</h3>
+</div> 
+<script>
+var u;
+var p;
+var btn;
+
+u = document.getElementById("username");
+p = document.getElementById("password");
+btn = document.getElementById("btn");
+btn.onclick = function(){
+if(u.value == "admin" && p.value == "user"){
+alert("Welcome to facebook");	
+}
+else{
+alert("INVALID LOGIN DETAILS");
+}
+}
+
+/*
+if(u.value == "" && p.value == ""){
+alert("please fill the details");	
+}
+else{
+alert("welcome to facebook");
+}
+*/
+
+
+/*
+btn.onclick = function(){
+if(p.value == ""){
+alert("please input the password");	
+}
+else(if(u.value == ""))
+{
+alert("please input the username");	
+}
+}*/
+
+
+/*
+btn.onclick = function(){
+if(u.value == "" && p.value == "user"){
+alert("please input the username");	
+}
+
+} */
+</script>
+</body> 
+</html> 
